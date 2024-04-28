@@ -4,45 +4,65 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <main>
       <section class="container">
         <article class="containerChats">
-          <div class="headerProfile">
-            <div>
-              <img src="" alt="perfil" />
+          <div class="containerChats_headerProfile">
+            <div class="headerProfile_imgProfile">
+              <img src="./img/bruno.jpg" alt="perfil" />
             </div>
-            <div>
-              <span>icon</span>
-              <span>icon</span>
-              <span>icon</span>
-              <span>icon</span>
-              <span>icon</span>
+            <div class="headerProfile_icons">
+              <span><img src="./img/1.png"></img></span>
+              <span><img src="./img/2.png"></img></span>
+              <img src="./img/3.png"></img>
+              <img src="./img/4.png"></img>
+              <img src="./img/5.png"></img>
             </div>
           </div>
-          <div>
-            <form action="">
-              <input type="search">
+          <div class="containerChats_search">
+            <form action="" class="formSearch">
+              <img src="./img/lupa.png" alt="">
+              <input type="search" placeholder="Buscar" />
             </form>
-            <div>
-              <i>icon</i>
+            <div class="filter">
+              <img src="./img/filter.png" alt="">
             </div>
           </div>
           <nav>
+            <article class="chat">
+              <img src="./img/bruno.jpg" class="chat_imgProfile" alt="imagen de perfil">
+              <div>
+                <div>
+                  <span>Yo (Tú)</span>
+                  <span>hora</span>
+                </div>
+                <p>parte de chat</p>
+              </div>
+            </article>
             <div>chat</div>
             <div>chat</div>
-            <div>chat</div>
-            <div>chat</div>
+            <!-- <div>chat</div> -->
             <div>chat</div>
             <div>chat</div>
             <div>chat</div>
             <div>chat</div>
           </nav>
         </article>
-        <article class="containerContentChat">
-          <img src="" alt="">
+        <article class="containerChats_contentChat">  
+          <div class="contentChat">
+            <img src="" alt="imagen" />   
+            <h1>WhatsApp Web</h1>
+            <p>Envía y recibe mensajes sin necesidad de tener tu teléfono conectado.</p>
+            <p>Usa WhatsApp en hasta 4 dispositivos vinculados y 1 teléfono a la vez</p>
+            <div>
+              <img src="./img/candado.png" alt="">
+              <span>Tus mensajes personales están cifrados de extremo a extremo.</span>
+            </div>
+          </div>   
+
         </article>
       </section>
     </main>
