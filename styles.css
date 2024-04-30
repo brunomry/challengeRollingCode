@@ -7,11 +7,16 @@ body{
   margin: 0;
   height: 100vh;
   overflow-x: hidden;
+  font-family:'Segoe UI', sans-serif;
 }
 
 main{
   height: 100%;
   background-color: #0C1317;
+}
+
+p{
+  font-size: 14px;
 }
 
 .container{
@@ -110,7 +115,7 @@ form img{
 
 .chat{
   width: 96%;
-  border: 1px solid black;
+  /* border-bottom: .5px solid black; */
   display: flex;
   align-items: center;
   gap: 15px;
@@ -118,12 +123,86 @@ form img{
   cursor: pointer;
 }
 
+.chat:hover{
+  background-color: #202C33;
+}
+
 .chat_imgProfile{
-  width: 50px;
+  width: 55px;
   height: 50px;
   object-fit: cover;
   border-radius: 100%;
 }
+
+.chat_description{
+  width: 100%;
+  border-bottom: 1px solid #202C33;
+  margin-top: 20px;
+}
+
+.description_nameHour{
+  display: flex;
+  justify-content: space-between;
+}
+
+.description_nameHour .name{
+  font-weight: 400;
+  color: #E9EDE9;
+  font-size: 17px;
+}
+
+.description_nameHour .hour,
+.description_nameHour .hourGreen{
+  color: #8696A0;
+  margin-right: 15px;
+}
+
+.chat_description div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.description_nameHour .hourGreen{
+  color: #00A884;
+}
+
+.checkAll,
+.checkAllrc{
+  color: #3474CA;
+  font-size: 20px;
+  margin-right: 4px;
+}
+
+.checkAllrc{
+  color: #8696A0;
+}
+
+.description_message span{
+  color:#D2D2D2;
+  color: #8696A0;
+  font-weight: normal;
+}
+
+.description_message,
+.messageContact_messageBold{
+  margin-top: 5px;
+}
+
+.messageContact_messageBold{
+  font-weight: 400;
+  color: #D1D7DB;
+}
+
+.description_messageContact .messageContact_numberOfMessage{
+  background-color: #00A884;
+  font-weight: bold;
+  margin-right: 15px;
+  border-radius: 100%;
+  padding: 2px 7px;
+}
+
+/* parte derecha*/
 
 .containerChats_contentChat{
   width: 100%;
