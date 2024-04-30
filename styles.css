@@ -17,6 +17,7 @@ main{
 
 p{
   font-size: 14px;
+  color: #8696A0;
 }
 
 .container{
@@ -115,7 +116,6 @@ form img{
 
 .chat{
   width: 96%;
-  /* border-bottom: .5px solid black; */
   display: flex;
   align-items: center;
   gap: 15px;
@@ -132,6 +132,7 @@ form img{
   height: 50px;
   object-fit: cover;
   border-radius: 100%;
+  margin-left: 10px;
 }
 
 .chat_description{
@@ -184,7 +185,10 @@ form img{
   font-weight: normal;
 }
 
-.description_message,
+.description_message{
+  margin-top: 2px;
+}
+
 .messageContact_messageBold{
   margin-top: 5px;
 }
@@ -200,6 +204,10 @@ form img{
   margin-right: 15px;
   border-radius: 100%;
   padding: 2px 7px;
+}
+
+.chat .imgProfileRC{
+  border: 2px solid #00A884;
 }
 
 /* parte derecha*/
@@ -229,13 +237,19 @@ form img{
   align-items: center;
 }
 
-.contentChat h1{
-  color: #C0D0D2;
-  color: rgba(233, 237, 239, 0.88);
+.contentChat .titleWhatsApp{
+  color: #E9EDEFE0;
+  font-size: 32px;
+  font-weight: 100;
+  margin: 20px 0 15px 0;
 }
 
+.contentChat p{
+  margin: 0;
+}
 
-.contentChat p,
-.contentChat span{
-  color: #8696A0;
+.encryptedMessage {
+  padding-bottom: 40px;
+  color: #667781;
+  font-size: 14px;
 }
