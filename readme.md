@@ -6,7 +6,7 @@ Este proyecto corresponde al Challenge propuesto por RollingCodeSchool, el cual 
 
 El proyecto consiste en realizar el maquetado de la pantalla principal de WhatsApp Web, incluyendo elementos como perfiles de usuarios, lista de chats, barra de búsqueda, íconos de acciones, y mensajes representativos.
 
-# Objetivos
+## Objetivos
 
 * El proyecto en producción debe funcionar y verse bien.
 * El código de CSS debe ser fácil de leer y seguir buenas prácticas. Se puede usar la metodología BEM pero no es obligatorio.
