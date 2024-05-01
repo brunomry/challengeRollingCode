@@ -13,6 +13,12 @@ El proyecto consiste en realizar el maquetado de la pantalla principal de WhatsA
 * El código HTML debe ser lo más semántico posible y tener buenas prácticas para SEO.
 * Se debe respetar la paleta de colores de la aplicación original y ser lo más fiel posible a ella.
 
+## Deploy del proyecto
+
+La aplicación está desplegada en Netlify. Puedes acceder haciendo clic en el siguiente enlace:
+
+🔗 [Maquetado WhatsApp Web](https://challenge-rc-bmr.netlify.app/)
+
 ## Tecnologías Utilizadas
 
 - HTML5: Estructura y marcado del contenido.
