@@ -207,12 +207,11 @@ form img{
   margin-top: 0px;
   margin-bottom: 10px;
   text-overflow: ellipsis;
-  /* white-space: nowrap; Evita que el texto se ajuste automáticamente */
-  display: -webkit-box; /* Establece la visualización como caja flexible para usar line-clamp */
-  -webkit-line-clamp: 2; /* Número de líneas que se mostrarán antes de cortar el texto */
-  -webkit-box-orient: vertical; /* Orientación vertical de la caja flexible */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
   overflow: hidden; 
-    -webkit-line-clamp: 1;
+  -webkit-line-clamp: 1;
 }
 
 .description_message img{
