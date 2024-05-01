@@ -30,7 +30,7 @@ p{
   justify-content: center;
 }
 
-.containerChats{
+.leftContainer{
   width: 100%;
   min-width: 390px;
   max-width: 510px;
@@ -38,7 +38,7 @@ p{
   border-right: 0.1px solid rgb(87, 87, 87);
 }
 
-.containerChats_headerProfile{
+.leftContainer_headerProfile{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -68,7 +68,7 @@ p{
   cursor: pointer;
 }
 
-.containerChats_search{
+.leftContainer_search{
   width: 100%;
   min-width: 390px;
   max-width: 512px;
@@ -77,7 +77,7 @@ p{
   padding: 7px 0 10px 10px;
 }
 
-.containerChats_search form{
+.leftContainer_search form{
   width: 100%;
   max-width: 460px;
 }
@@ -114,8 +114,27 @@ form img{
   cursor: pointer;
 }
 
+.containerChats{
+  overflow-y: auto;
+  overflow-x: hidden;
+  height:80%; 
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #111B21;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #374045;
+}
+
 .chat{
   width: 96%;
+  height: 72px;
   display: flex;
   align-items: center;
   gap: 15px;
@@ -128,7 +147,7 @@ form img{
 }
 
 .chat_imgProfile{
-  width: 55px;
+  width: 50px;
   height: 50px;
   object-fit: cover;
   border-radius: 100%;
@@ -138,12 +157,12 @@ form img{
 .chat_description{
   width: 100%;
   border-bottom: 1px solid #202C33;
-  margin-top: 20px;
 }
 
 .description_nameHour{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
+  padding-top: 20px;
 }
 
 .description_nameHour .name{
@@ -180,13 +199,30 @@ form img{
 }
 
 .description_message span{
-  color:#D2D2D2;
   color: #8696A0;
   font-weight: normal;
 }
 
 .description_message{
-  margin-top: 2px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  text-overflow: ellipsis;
+  /* white-space: nowrap; Evita que el texto se ajuste automáticamente */
+  display: -webkit-box; /* Establece la visualización como caja flexible para usar line-clamp */
+  -webkit-line-clamp: 2; /* Número de líneas que se mostrarán antes de cortar el texto */
+  -webkit-box-orient: vertical; /* Orientación vertical de la caja flexible */
+  overflow: hidden; 
+    -webkit-line-clamp: 1;
+}
+
+.description_message img{
+  margin-right: 2px;
+  width: 15px;
+}
+
+.description_message .messageColor{
+  color: #D1D7DB;
+  font-weight:500;
 }
 
 .messageContact_messageBold{
@@ -204,15 +240,14 @@ form img{
   margin-right: 15px;
   border-radius: 100%;
   padding: 2px 7px;
+  margin-bottom: 10px;
 }
 
-.chat .imgProfileRC{
+.chat .colorState{
   border: 2px solid #00A884;
 }
 
-/* parte derecha*/
-
-.containerChats_contentChat{
+.rightContainer{
   width: 100%;
   height: 100%;
   min-width: 570px;
@@ -225,26 +260,25 @@ form img{
   padding: 0 10px;
 }
 
-.contentChat{
+.infoWhatsApp{
   width: 100%;
   height: 100%;
   min-width: 570px;
   max-width: 1200px;
-  background-color: #222E35;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.contentChat .titleWhatsApp{
+.infoWhatsApp .titleWhatsApp{
   color: #E9EDEFE0;
   font-size: 32px;
   font-weight: 100;
   margin: 20px 0 15px 0;
 }
 
-.contentChat p{
+.infoWhatsApp p{
   margin: 0;
 }
 
@@ -252,4 +286,16 @@ form img{
   padding-bottom: 40px;
   color: #667781;
   font-size: 14px;
+}
+
+@media all and (min-width:1200px){
+  .containerChats{
+    height:85%;
+  }
+}
+
+@media all and (min-width:1600px){
+  .containerChats{
+    height:87%;
+  }
 }
